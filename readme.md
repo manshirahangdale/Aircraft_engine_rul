@@ -75,19 +75,6 @@ Trains the LSTM model for 25 epochs with early stopping.
 python evaluate_test.py
 Generates predictions and calculates RMSE/MAE metrics.
 
-## Project Structure
-aircraft-engine-rul-prediction/
-│
-├── preprocess.py          # Data preprocessing pipeline
-├── checkdata.py           # Feature information checker
-├── make_sequences.py      # Sequence generation for LSTM
-├── train_lstm.py          # LSTM model training
-├── evaluate_test.py       # Test set evaluation
-├── lstm_rul_model.pt      # Trained model weights
-├── test_predictions.csv   # Prediction results
-├── requirements.txt       # Python dependencies
-└── README.md             # Project documentation
-
 ## Key Learnings
 
 - Handling time-series data with sequential dependencies
@@ -98,10 +85,10 @@ aircraft-engine-rul-prediction/
 
 ## Future Improvements
 
-- [ ] Implement attention mechanisms
-- [ ] Try bidirectional LSTM
-- [ ] Experiment with GRU layers
-- [ ] Add ensemble methods
-- [ ] Implement RUL clipping (common in literature)
-- [ ] Extend to FD002, FD003, FD004 datasets
-- [ ] Add visualization dashboard
+- Implement attention mechanisms
+-  Try bidirectional LSTM
+-  Experiment with GRU layers
+-  Add ensemble methods
+-  Implement RUL clipping (common in literature)
+-  Extend to FD002, FD003, FD004 datasets
+-  Add visualization dashboard
